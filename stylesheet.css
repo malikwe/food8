@@ -52,3 +52,12 @@
         opacity: 0;
     }
 }
+
+.logo {
+    background-image: url(imgs/F8-2048.png);
+    background-size: cover;
+    height: 23.63vw;
+    width: 55vw;
+    margin: 0 auto;
+}
+
