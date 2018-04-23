@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>steder</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <section id="steder">
+
+    </section>
+
+
+    <template>
+        <article>
+            <h2 data-title></h2>
+            <img data-image>
+            <p data-description></p>
+            <p data-kontakt></p>
+        </article>
+    </template>
+    <script>
+        let jsonUrl = "http://magnuskvolbaek.dk/kea/food8/wordpress/wp-json/wp/v2/steder"
+        let steder = [];
+
+        let template = document.querySelector("template");
+        let display = document.querySelector("#steder")
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        async function hentJson() {
+            let jsonData = await fetch(jsonUrl);
+            steder = await jsonData.json();
+
+            visSteder();
+
+        }
+
+        function visSteder() {
+            steder.forEach(sted => {
+                let klon = template.cloneNode(true).content;
+
+                klon.querySelector("[data-title]").textContent = sted.title.rendered;
+                klon.querySelector("[data-image]").src = sted.acf.foto;
+                klon.querySelector("[data-description]").innerHTML = sted.content.rendered;
+                klon.querySelector("[data-kontakt]").innerHTML = sted.acf.kontakt;
+
+                display.appendChild(klon);
+            });
+        }
+    </script>
+</body>
+
+</html>

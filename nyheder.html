@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nyheder</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <section id="nyheder">
+
+    </section>
+
+
+    <template>
+        <article>
+            <h2 data-title></h2>
+            <img data-image>
+            <p data-description></p>
+            <p data-kontakt></p>
+        </article>
+    </template>
+    <script>
+        let jsonUrl = "http://magnuskvolbaek.dk/kea/food8/wordpress/wp-json/wp/v2/nyheder"
+        let nyheder = [];
+
+        let template = document.querySelector("template");
+        let display = document.querySelector("#nyheder")
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        async function hentJson() {
+            let jsonData = await fetch(jsonUrl);
+            nyheder = await jsonData.json();
+
+            visNyheder();
+
+        }
+
+        function visNyheder() {
+            nyheder.forEach(nyhed => {
+                let klon = template.cloneNode(true).content;
+
+                klon.querySelector("[data-title]").textContent = nyhed.acf.overskrift;
+                klon.querySelector("[data-image]").src = nyhed.acf.foto;
+                klon.querySelector("[data-description]").innerHTML = nyhed.acf.beskrivelse;
+                klon.querySelector("[data-kontakt]").innerHTML = nyhed.acf.kontakt;
+
+                display.appendChild(klon);
+            });
+        }
+    </script>
+</body>
+
+</html>
