@@ -1,0 +1,54 @@
+.menuknap {
+    text-align: center;
+    font-size: 100%;
+    letter-spacing: 5px;
+    margin-top: 10px;
+
+}
+
+.menuknap a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Forside Slideshow*/
+
+#cf img.top {
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+
+#cf {
+    position: relative;
+    margin: 0 auto;
+}
+
+#cf img {
+    width: 90%;
+    margin-top: 6%;
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 5s ease-in-out;
+    -moz-transition: opacity 5s ease-in-out;
+    -o-transition: opacity 5s ease-in-out;
+    transition: opacity 5s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
