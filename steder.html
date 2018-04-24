@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>steder</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
@@ -13,6 +13,23 @@
         <div class="logo">
         </div>
     </a>
+
+    <div class="menuknap">
+
+        <button id="menulink">
+            <a href="inspiration.html">INSPIRATION</a>
+        </button>
+
+        <button id="menulink">
+            <a href="steder.html">STEDER</a>
+        </button>
+
+        <button id="menulink">
+            <a href="omfood8.html">OM FOOD8</a>
+        </button>
+
+    </div>
+
     <section id="steder">
 
     </section>
@@ -20,10 +37,9 @@
 
     <template>
         <article>
-            <h2 data-title></h2>
-            <img data-image>
-            <p data-description></p>
-            <p data-kontakt></p>
+            <h2 class="navn" data-title></h2>
+            <img class="stedbillede" data-image>
+            <p class="beskrivelse" data-description></p>
         </article>
     </template>
     <script>
@@ -47,10 +63,9 @@
             steder.forEach(sted => {
                 let klon = template.cloneNode(true).content;
 
-                klon.querySelector("[data-title]").textContent = sted.title.rendered;
+                klon.querySelector("[data-title]").textContent = sted.acf.navn;
                 klon.querySelector("[data-image]").src = sted.acf.foto;
-                klon.querySelector("[data-description]").innerHTML = sted.content.rendered;
-                klon.querySelector("[data-kontakt]").innerHTML = sted.acf.kontakt;
+                klon.querySelector("[data-description]").innerHTML = sted.acf.overskrift;
 
                 display.appendChild(klon);
             });
