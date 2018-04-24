@@ -10,13 +10,33 @@ body {
 
 /*fonte og deres str*/
 
+@font-face {
+    font-family: 'hk_grotesksemibold';
+    src: url('hkgrotesk-semibold-webfont.woff2') format('woff2'),
+         url('hkgrotesk-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk_groteskregular';
+    src: url('hkgrotesk-regular-webfont.woff2') format('woff2'),
+         url('hkgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 p {
     font-size: 1.2em;
+    font-family: "hk_groteskregular"
 }
 
 .kortbeskrivelse h2 {
     text-align: center;
     font-size: 1.4em;
+    font-family: "hk_grotesksemibold"
 }
 
 .kortbeskrivelse a {
