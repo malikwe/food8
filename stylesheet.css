@@ -13,7 +13,7 @@ body {
 @font-face {
     font-family: 'hk_grotesksemibold';
     src: url('hkgrotesk-semibold-webfont.woff2') format('woff2'),
-         url('hkgrotesk-semibold-webfont.woff') format('woff');
+    url('hkgrotesk-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -22,7 +22,7 @@ body {
 @font-face {
     font-family: 'hk_groteskregular';
     src: url('hkgrotesk-regular-webfont.woff2') format('woff2'),
-         url('hkgrotesk-regular-webfont.woff') format('woff');
+    url('hkgrotesk-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -30,8 +30,7 @@ body {
 
 p {
     font-size: 1.2em;
-    font-family: "hk_groteskregular"
-    text-align: justify;
+    font-family: "hk_groteskregular" text-align: justify;
 }
 
 .kortbeskrivelse h2 {
@@ -140,4 +139,44 @@ p {
 
 .nyhed5 {
     grid-area: nyhed5;
+}
+
+#steder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1024px;
+    margin: 0 auto;
+    grid-gap: 50px;
+    transition: all 1s ease;
+}
+
+.navn {
+    font-size: 1.4em;
+    font-family: "hk_grotesksemibold";
+    margin-bottom: 15px;
+}
+
+.stedbillede {
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.beskrivelse {
+    font-size: 1.2em;
+    font-family: "hk_groteskregular";
+    text-align: justify;
+    max-width: 375px;
+    border-bottom: 10px #fff;
+}
+
+@media and screen (max-width: 500px) {
+    .stedbillede {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #steder {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
