@@ -1,6 +1,11 @@
-    body {
-        background-color: #fbfaf2;
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fbfaf2;
+}
 
 /*fonte og deres str*/
 
@@ -15,25 +20,25 @@ p {
 
 /*fonte og deres str slut*/
 
-    .menuknap {
-        text-align: center;
-        font-size: 100%;
-        letter-spacing: 5px;
-        margin-top: 20px;
-    }
+.menuknap {
+    text-align: center;
+    font-size: 100%;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
 
-    .menuknap a {
-        text-decoration: none;
-        color: black;
-        font-family: '';
-        font-size: 1.5em;
-        margin: 5px;
-    }
+.menuknap a {
+    text-decoration: none;
+    color: black;
+    font-family: '';
+    font-size: 1.5em;
+    margin: 5px;
+}
 
-    .menuknap a:hover {
-        color: #63c3b0;
-        border: solid 1px #63c3b0;
-    }
+.menuknap a:hover {
+    color: #63c3b0;
+    border: solid 1px #63c3b0;
+}
 
 /*styling til menu knapper*/
 
@@ -41,64 +46,36 @@ p {
     border: none;
     background-color: #fbfaf2;
 }
-    /*Forside Slideshow*/
 
-    #cf img.top {
-        animation-name: cf3FadeInOut;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-duration: 5s;
-        animation-direction: alternate;
-    }
+/*Forside Slideshow*/
 
-    #cf {
-        position: relative;
-        margin: 0 auto;
-    }
+.slideshow {
+    width: 100%;
+    height: 400px;
+}
 
-    #cf img {
-        width: 90%;
-        margin-top: 6%;
-        position: absolute;
-        left: 0;
-        -webkit-transition: opacity 5s ease-in-out;
-        -moz-transition: opacity 5s ease-in-out;
-        -o-transition: opacity 5s ease-in-out;
-        transition: opacity 5s ease-in-out;
-    }
+.mySlides {
+    width: 100%;
+    display: none;
+}
 
-    @keyframes cf3FadeInOut {
-        0% {
-            opacity: 1;
-        }
-        45% {
-            opacity: 1;
-        }
-        55% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-
-    .logo {
-        background-image: url(imgs/F8-2048.png);
-        background-size: cover;
-        height: 23.63vw;
-        width: 55vw;
-        margin: 0 auto;
-    }
+.logo {
+    background-image: url(imgs/F8-2048.png);
+    background-size: cover;
+    height: 23.63vw;
+    width: 55vw;
+    margin: 0 auto;
+}
 
 
 /* laver grid system til mobil-version. vores grid består af 1 række, derfor "1fr".*/
 
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "header" "menuknap" "column" "cf" "kortbeskrivelse"
-    }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "menuknap" "column" "cf" "kortbeskrivelse"
+}
 
 
 .column {
