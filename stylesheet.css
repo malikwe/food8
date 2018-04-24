@@ -7,6 +7,7 @@ body {
     background-color: #fbfaf2;
 }
 
+
 /*fonte og deres str*/
 
 p {
@@ -26,9 +27,7 @@ p {
 .kortbeskrivelse a:hover {
     text-decoration: none;
     color: #63c3b0;
-
 }
-
 
 
 /*fonte og deres str slut*/
@@ -53,6 +52,7 @@ p {
     border: solid 1px #63c3b0;
 }
 
+
 /*styling til menu knapper*/
 
 #menulink {
@@ -60,11 +60,13 @@ p {
     background-color: #fbfaf2;
 }
 
+
 /*Forside Slideshow*/
 
 .slideshow {
     width: 100%;
-    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .mySlides {
@@ -89,7 +91,6 @@ p {
     grid-template-rows: auto;
     grid-template-areas: "kortbeskrivelse" "nyhed1" "nyhed2" "nyhed3" "nyhed4" "nyhed5" "footer"
 }
-
 
 .kortbeskrivelse {
     grid-area: kortbeskrivelse;
