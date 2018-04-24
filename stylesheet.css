@@ -15,8 +15,21 @@ p {
 
 .kortbeskrivelse h2 {
     text-align: center;
-    font-size: 1.4em
+    font-size: 1.4em;
 }
+
+.kortbeskrivelse a {
+    text-decoration: none;
+    color: #2e51a5;
+}
+
+.kortbeskrivelse a:hover {
+    text-decoration: none;
+    color: #63c3b0;
+
+}
+
+
 
 /*fonte og deres str slut*/
 
@@ -74,20 +87,35 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "header" "menuknap" "column" "cf" "kortbeskrivelse"
+    grid-template-areas: "kortbeskrivelse" "nyhed1" "nyhed2" "nyhed3" "nyhed4" "nyhed5" "footer"
 }
 
-
-.column {
-    grid-area: column;
-}
-
-#cf {
-    grid-area: cf;
-}
 
 .kortbeskrivelse {
     grid-area: kortbeskrivelse;
-    padding-top: 22em;
     margin: 20px;
+}
+
+.nyhederforside h2 {
+    text-align: center;
+}
+
+.nyhed1 {
+    grid-area: nyhed1;
+}
+
+.nyhed2 {
+    grid-area: nyhed2;
+}
+
+.nyhed3 {
+    grid-area: nyhed3;
+}
+
+.nyhed4 {
+    grid-area: nyhed4;
+}
+
+.nyhed5 {
+    grid-area: nyhed5;
 }
