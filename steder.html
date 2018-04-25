@@ -71,6 +71,12 @@
                 klon.querySelector("[data-image]").src = sted.acf.foto;
                 klon.querySelector("[data-description]").innerHTML = sted.acf.overskrift;
 
+                //single view on click.
+                klon.querySelector("article").addEventListener("click", () => {
+                    location.href = "sted.html?id=" + sted.id;
+                });
+
+
                 display.appendChild(klon);
             });
         }
