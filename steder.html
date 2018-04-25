@@ -14,7 +14,7 @@
         </div>
     </a>
 
-    <div class="menuknap">
+    <div class="menuknap menusteder">
 
         <button id="menulink">
             <a href="inspiration.html">INSPIRATION</a>
@@ -36,11 +36,15 @@
 
 
     <template>
-        <article class="sted">
-            <h2 class="navn" data-title></h2>
-            <img class="stedbillede" data-image>
-            <p class="beskrivelse" data-description></p>
-        </article>
+       <div class="box">
+           <div class="sted">
+                <article>
+                    <h2 class="navn" data-title></h2>
+                    <img class="stedbillede" data-image>
+                    <p class="beskrivelse" data-description></p>
+                </article>
+           </div>
+        </div>
     </template>
     <script>
         let jsonUrl = "http://magnuskvolbaek.dk/kea/food8/wordpress/wp-json/wp/v2/steder"
@@ -70,7 +74,6 @@
                 display.appendChild(klon);
             });
         }
-
     </script>
 </body>
 
