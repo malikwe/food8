@@ -10,7 +10,6 @@ body {
 
 /*fonte og deres str*/
 
-
 @font-face {
     font-family: 'hk_grotesksemibold';
     src: url('hkgrotesk-semibold-webfont.woff2') format('woff2'),
@@ -198,5 +197,46 @@ footer {
     transform: scale(1.2);
 }
 
+.menusteder {
+    margin-bottom: 40px;
+}
+
+.box {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sted {
+    margin: 0 auto;
+}
+
+.navn {
+    margin-bottom: 15px;
+}
+
+.stedbillede {
+    max-width: 675px;
+    width: 100%;
+}
+
+.beskrivelse {
+    max-width: 675px;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 1em;
+}
+
+#steder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    transition: all 1s ease;
+}
+
+@media screen and (max-width: 1000px) {
+    #steder {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 /* footer facebook og instalogo SLUT */
