@@ -35,14 +35,14 @@ h2 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: "hk_groteskregular";
     text-align: justify;
 }
 
 .kortbeskrivelse h2 {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-bottom: 15px;
 }
 
@@ -64,13 +64,13 @@ p {
     font-size: 100%;
     letter-spacing: 5px;
     margin-top: 20px;
+
 }
 
 .menuknap button {
     text-decoration: none;
     color: black;
-    font-family: '';
-    font-size: 1.2em;
+    font-size: 0.9em;
     margin: 5px;
     font-family: "hk_grotesksemibold";
     transition: 0.1s;
@@ -79,6 +79,7 @@ p {
 .menuknap button:hover {
     color: #63c3b0;
     border: solid 1px #63c3b0;
+
 }
 
 /*styling til menu knapper*/
@@ -106,8 +107,8 @@ p {
 .logo {
     background-image: url(imgs/F8-2048.png);
     background-size: cover;
-    height: 23.63vw;
-    width: 55vw;
+    height: 27.63vw;
+    width: 64vw;
     margin: 0 auto;
     margin-top: 15px;
 }
@@ -119,12 +120,14 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "kortbeskrivelse" "nyhed1" "nyhed2" "nyhed3" "nyhed4" "nyhed5" "footer"
+    grid-template-areas: "kortbeskrivelse" "nyhed1" "nyhed2" "nyhed3" "nyhed4" "nyhed5" "footer";
+    margin: 17px;
+
 }
 
 .kortbeskrivelse {
     grid-area: kortbeskrivelse;
-    margin: 20px;
+    margin-bottom: 17px;
 }
 
 .nyhederforside h2 {
@@ -245,6 +248,7 @@ footer {
 
 .menusteder {
     margin-bottom: 40px;
+
 }
 
 .box {
@@ -290,7 +294,6 @@ footer {
 
 /* footer facebook og instalogo SLUT */
 
-
 /* cookie og privatlivs html */
 
 .cookieogprivat {
@@ -312,7 +315,6 @@ footer {
 
 
 /* cookie og privatlivs html SLUT*/
-
 
 /* styling til single-page til steder */
 
