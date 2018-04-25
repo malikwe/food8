@@ -55,27 +55,27 @@ p {
     margin-top: 20px;
 }
 
-.menuknap a {
+.menuknap button {
     text-decoration: none;
     color: black;
     font-family: '';
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 5px;
     font-family: "hk_groteskregular"
 }
 
-.menuknap a:hover {
+.menuknap button:hover {
     color: #63c3b0;
     border: solid 1px #63c3b0;
 }
 
-
 /*styling til menu knapper*/
 
-#menulink {
+.menulink {
     border: none;
     background-color: #fbfaf2;
 }
+
 
 
 /*Forside Slideshow*/
@@ -255,6 +255,7 @@ footer {
     margin-bottom: 40px;
     font-size: 1em;
 }
+
 
 #steder {
     display: grid;

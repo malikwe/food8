@@ -5,10 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nyheder</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
+    <a href="index.html">
+        <div class="logo">
+        </div>
+    </a>
+    <div class="menuknap menusteder">
+
+        <button class="menulink" id="menuinspiration">
+            INSPIRATION
+        </button>
+
+        <button class="menulink" id="menusteder">
+            STEDER
+        </button>
+
+        <button class="menulink" id="menuomfood8">
+            OM FOOD8
+        </button>
+
+    </div>
+
     <section id="nyheder">
 
     </section>
@@ -51,6 +71,16 @@
                 display.appendChild(klon);
             });
         }
+        document.querySelector("#menusteder").addEventListener("click", () => {
+            window.location.href = "steder.html";
+            console.log()
+        });
+        document.querySelector("#menuomfood8").addEventListener("click", () => {
+            window.location.href = "omfood8.html";
+        });
+        document.querySelector("#menuinspiration").addEventListener("click", () => {
+            window.location.href = "nyheder.html";
+        });
     </script>
 </body>
 
