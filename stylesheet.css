@@ -10,6 +10,7 @@ body {
 
 /*fonte og deres str*/
 
+
 @font-face {
     font-family: 'hk_grotesksemibold';
     src: url('hkgrotesk-semibold-webfont.woff2') format('woff2'),
@@ -30,13 +31,13 @@ body {
 
 p {
     font-size: 1.2em;
-    font-family: "hk_groteskregular" text-align: justify;
+    font-family: "hk_groteskregular";
+    text-align: justify;
 }
 
 .kortbeskrivelse h2 {
     text-align: center;
     font-size: 1.4em;
-    font-family: "hk_grotesksemibold"
 }
 
 .kortbeskrivelse a {
@@ -142,3 +143,60 @@ p {
 .nyhed5 {
     grid-area: nyhed5;
 }
+
+.grid_omfood8 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "omfood8" "tilmeld"
+}
+
+.omfood8 {
+    grid-area: omfood8;
+    margin: 20px;
+}
+
+.omfood8 h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+/* footer facebook og instalogo */
+
+footer {
+    border: solid 3px #2e51a5;
+}
+
+.some_container {
+    display: flex;
+    margin-left: 38vw;
+}
+
+.instalogo {
+    width: 8vw;
+    height: 8vw;
+    background-size: cover;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.instalogo:hover {
+    transform: scale(1.2);
+}
+
+.facebooklogo {
+    width: 8vw;
+    height: 8vw;
+    background-size: cover;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.facebooklogo:hover {
+    transform: scale(1.2);
+}
+
+
+/* footer facebook og instalogo SLUT */
