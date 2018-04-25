@@ -13,7 +13,7 @@ body {
 @font-face {
     font-family: 'hk_grotesksemibold';
     src: url('hkgrotesk-semibold-webfont.woff2') format('woff2'),
-         url('hkgrotesk-semibold-webfont.woff') format('woff');
+    url('hkgrotesk-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -22,7 +22,7 @@ body {
 @font-face {
     font-family: 'hk_groteskregular';
     src: url('hkgrotesk-regular-webfont.woff2') format('woff2'),
-         url('hkgrotesk-regular-webfont.woff') format('woff');
+    url('hkgrotesk-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -30,8 +30,7 @@ body {
 
 p {
     font-size: 1.2em;
-    font-family: "hk_groteskregular"
-    text-align: justify;
+    font-family: "hk_groteskregular" text-align: justify;
 }
 
 .kortbeskrivelse h2 {
@@ -43,6 +42,7 @@ p {
 .kortbeskrivelse a {
     text-decoration: none;
     color: #2e51a5;
+
 }
 
 .kortbeskrivelse a:hover {
@@ -66,6 +66,7 @@ p {
     font-family: '';
     font-size: 1.5em;
     margin: 5px;
+    font-family: "hk_groteskregular"
 }
 
 .menuknap a:hover {
