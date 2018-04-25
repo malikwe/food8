@@ -38,7 +38,12 @@
         <article>
             <h2 class="navn" data-title></h2>
             <img class="stedbillede" data-image>
-            <p class="beskrivelse" data-description></p>
+            <p class="overskrift" data-overskrift></p>
+            <p class="åbningstider" data-open></p>
+            <p class="kontakt" data-kontakt></p>
+            <p class="adresse" data-adresse></p>
+            <p class="beskrivelse" data-beskrivelse></p>
+            <p class="kontrolrapport" data-kontrolrapport></p>
         </article>
     </section>
 
@@ -72,9 +77,12 @@
 
             document.querySelector("[data-title]").textContent = single.acf.navn;
             document.querySelector("[data-image]").src = single.acf.foto;
-            document.querySelector("[data-description]").innerHTML = single.acf.overskrift;
-
-
+            document.querySelector("[data-overskrift]").innerHTML = single.acf.overskrift;
+            document.querySelector("[data-open]").innerHTML = single.acf.abningstider;
+            document.querySelector("[data-kontakt]").textContent = single.acf.kontakt;
+            document.querySelector("[data-adresse]").textContent = single.acf.adresse;
+            document.querySelector("[data-beskrivelse]").innerHTML = single.acf.beskrivelse;
+            document.querySelector("[data-kontrolrapport]").textContent = single.acf.kontrolrapport;
 
         }
 
