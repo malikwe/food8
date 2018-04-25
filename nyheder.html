@@ -5,10 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nyheder</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
+    <a href="index.html">
+        <div class="logo">
+        </div>
+    </a>
+    <div class="menuknap menusteder">
+
+        <button class="menulink" id="menuinspiration">
+            INSPIRATION
+        </button>
+
+        <button class="menulink" id="menusteder">
+            STEDER
+        </button>
+
+        <button class="menulink" id="menuomfood8">
+            OM FOOD8
+        </button>
+
+    </div>
+
     <section id="nyheder">
 
     </section>
@@ -51,7 +71,32 @@
                 display.appendChild(klon);
             });
         }
+        document.querySelector("#menusteder").addEventListener("click", () => {
+            window.location.href = "steder.html";
+            console.log()
+        });
+        document.querySelector("#menuomfood8").addEventListener("click", () => {
+            window.location.href = "omfood8.html";
+        });
+        document.querySelector("#menuinspiration").addEventListener("click", () => {
+            window.location.href = "nyheder.html";
+        });
     </script>
 </body>
-
+<footer>
+    <div class="footer ">
+        <div class="some_container ">
+            <a href="https://www.instagram.com/viktor.hansen/ " target="_blank "><img src="imgs/instalogo.svg " class="instalogo " alt="Instagram "></a>
+            <a href="https://www.facebook.com/viktor.hansen.31 " target="_blank "><img src="imgs/facebooklogo.svg " class="facebooklogo " alt="facebook "></a>
+        </div>
+        <button id="nyhedsbrev ">
+    <a href="tilmeldnyhedsbrev.html ">TILMED NYHEDSBREV</a>
+       </button>
+        <div class="info_container ">
+            <p>info@food8.dk</p>
+            <a href="cookieogprivat.html">Cookie- og privatlivspolitik</a>
+            <p>Food8 ApS — Langelinie 10, 2100 København Ø — CVR nr. 39306999</p>
+        </div>
+    </div>
+</footer>
 </html>

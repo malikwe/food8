@@ -18,6 +18,17 @@ function carousel() {
 
 
 
+document.querySelector("#menusteder").addEventListener("click", () => {
+    window.location.href = "steder.html";
+    console.log()
+});
+document.querySelector("#menuomfood8").addEventListener("click", () => {
+    window.location.href = "omfood8.html";
+});
+document.querySelector("#menuinspiration").addEventListener("click", () => {
+    window.location.href = "nyheder.html";
+});
+
 
 
 //boys open modal
