@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sted</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <a href="index.html">
+        <div class="logo">
+        </div>
+    </a>
+
+    <div class="menuknap menusteder">
+
+        <button id="menulink">
+            <a href="inspiration.html">INSPIRATION</a>
+        </button>
+
+        <button id="menulink">
+            <a href="steder.html">STEDER</a>
+        </button>
+
+        <button id="menulink">
+            <a href="omfood8.html">OM FOOD8</a>
+        </button>
+
+    </div>
+
+
+
+
+    <section id="single_sted">
+        <article>
+            <h2 class="navn" data-title></h2>
+            <img class="stedbillede" data-image>
+            <p class="beskrivelse" data-description></p>
+        </article>
+    </section>
+
+
+
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let urlID = urlParams.get('id');
+        console.log(urlID);
+
+        let jsonUrl = "http://magnuskvolbaek.dk/kea/food8/wordpress/wp-json/wp/v2/steder/" + urlID;
+        let single = {};
+
+
+
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        async function hentJson() {
+            let jsonData = await fetch(jsonUrl);
+            single = await jsonData.json();
+            console.log(single);
+
+            visSingle();
+
+        }
+
+        function visSingle() {
+
+
+
+            document.querySelector("[data-title]").textContent = single.acf.navn;
+            document.querySelector("[data-image]").src = single.acf.foto;
+            document.querySelector("[data-description]").innerHTML = single.acf.overskrift;
+
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>
