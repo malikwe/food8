@@ -322,5 +322,17 @@ footer {
     margin: 20px;
 }
 
+#single_sted p {
+    text-align: center;
+}
 
-/* styling til single-page til steder */
+.overskrift {
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: "hk_grotesksemibold";
+    text-align: justify;
+}
+
+
+
+/* styling til single-page til steder SLUT */
