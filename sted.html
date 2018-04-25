@@ -44,6 +44,16 @@
             <p class="adresse" data-adresse></p>
             <p class="beskrivelse" data-beskrivelse></p>
             <p class="kontrolrapport" data-kontrolrapport></p>
+            <p class="morgen_menu" data-morgen_menu></p>
+            <p class="morgen_menu" data-morgen_menu></p>
+            <p class="frokost_menu" data-frokost_menu></p>
+            <p class="aften_menu" data-aften_menu></p>
+            <p class="selskabs_menu" data-selskabs_menu></p>
+            <p class="drikke_menu" data-drikke_menu></p>
+            <p class="takeaway" data-takeaway></p>
+
+
+
         </article>
     </section>
 
@@ -83,9 +93,15 @@
             document.querySelector("[data-adresse]").textContent = single.acf.adresse;
             document.querySelector("[data-beskrivelse]").innerHTML = single.acf.beskrivelse;
             document.querySelector("[data-kontrolrapport]").textContent = single.acf.kontrolrapport;
+            document.querySelector("[data-morgen_menu]").innerHTML = single.acf.morgen_menu;
+            document.querySelector("[data-morgen_menu]").innerHTML = single.acf.morgen_menu;
+            document.querySelector("[data-frokost_menu]").innerHTML = single.acf.frokost_menu;
+            document.querySelector("[data-aften_menu]").innerHTML = single.acf.aften_menu;
+            document.querySelector("[data-selskabs_menu]").innerHTML = single.acf.selskabs_menu;
+            document.querySelector("[data-drikke_menu]").innerHTML = single.acf.drikke_menu;
+            document.querySelector("[data-takeaway]").innerHTML = single.acf.takeaway;
 
         }
-
     </script>
 
 
