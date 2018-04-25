@@ -195,14 +195,11 @@ footer {
     transform: scale(1.2);
 }
 
-.info_container {
-    text-align: center;
-}
-
 .info_container p {
     margin: 10px;
     font-size: 1em;
     font-family: "hk_groteskregular";
+    text-align: center;
 }
 
 #nyhedsbrev {
