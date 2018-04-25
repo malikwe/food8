@@ -24,8 +24,18 @@ body {
     font-style: normal;
 }
 
-p {
+h1 {
+    font-size: 1.8em;
+    font-family: "hk_grotesksemibold";
+}
+
+h2 {
     font-size: 1.2em;
+    font-family: "hk_grotesksemibold";
+}
+
+p {
+    font-size: 1em;
     font-family: "hk_groteskregular";
     text-align: justify;
 }
@@ -61,7 +71,7 @@ p {
     font-family: '';
     font-size: 1.5em;
     margin: 5px;
-    font-family: "hk_groteskregular"
+    font-family: "hk_grotesksemibold";
 }
 
 .menuknap a:hover {
@@ -207,6 +217,7 @@ footer {
     color: #63c3b0;
     border: solid 2px #63c3b0;
     font-size: 1.2em;
+    background-color: #fbfaf2;
 }
 
 #nyhedsbrev a {
