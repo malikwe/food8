@@ -156,15 +156,18 @@ p {
 }
 
 
-/* footer facebook og instalogo */
+/* footer indhold */
 
 footer {
     border: solid 3px #2e51a5;
+    margin: 15px;
+    text-align: center;
 }
 
 .some_container {
     display: flex;
-    margin-left: 38vw;
+    margin-left: 33vw;
+    margin-bottom: 10px;
 }
 
 .instalogo {
@@ -191,8 +194,37 @@ footer {
     transform: scale(1.2);
 }
 
+.info_container {
+    text-align: center;
+}
 
-/* footer facebook og instalogo SLUT */
+.info_container p {
+    margin: 10px;
+    font-size: 1em;
+    font-family: "hk_groteskregular";
+}
+
+#nyhedsbrev {
+    text-decoration: none;
+    color: #63c3b0;
+    border: solid 2px #63c3b0;
+    font-size: 1.2em;
+}
+
+#nyhedsbrev a {
+    text-decoration: none;
+    color: #63c3b0;
+    font-family: 'hk_grotesksemibold';
+    margin: 5px;
+    transition: 0.5s;
+}
+
+#nyhedsbrev a:hover {
+    font-size: 1.2em;
+}
+
+
+/* footer indhold SLUT */
 
 #steder {
     display: grid;
