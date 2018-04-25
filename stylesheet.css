@@ -12,20 +12,16 @@ body {
 
 @font-face {
     font-family: 'hk_grotesksemibold';
-    src: url('hkgrotesk-semibold-webfont.woff2') format('woff2'),
-    url('hkgrotesk-semibold-webfont.woff') format('woff');
+    src: url('hkgrotesk-semibold-webfont.woff2') format('woff2'), url('hkgrotesk-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'hk_groteskregular';
-    src: url('hkgrotesk-regular-webfont.woff2') format('woff2'),
-    url('hkgrotesk-regular-webfont.woff') format('woff');
+    src: url('hkgrotesk-regular-webfont.woff2') format('woff2'), url('hkgrotesk-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 p {
@@ -42,7 +38,6 @@ p {
 .kortbeskrivelse a {
     text-decoration: none;
     color: #2e51a5;
-
 }
 
 .kortbeskrivelse a:hover {
@@ -162,15 +157,18 @@ p {
 }
 
 
-/* footer facebook og instalogo */
+/* footer indhold */
 
 footer {
     border: solid 3px #2e51a5;
+    margin: 15px;
+    text-align: center;
 }
 
 .some_container {
     display: flex;
-    margin-left: 38vw;
+    margin-left: 33vw;
+    margin-bottom: 10px;
 }
 
 .instalogo {
@@ -196,6 +194,38 @@ footer {
 .facebooklogo:hover {
     transform: scale(1.2);
 }
+
+.info_container {
+    text-align: center;
+}
+
+.info_container p {
+    margin: 10px;
+    font-size: 1em;
+    font-family: "hk_groteskregular";
+}
+
+#nyhedsbrev {
+    text-decoration: none;
+    color: #63c3b0;
+    border: solid 2px #63c3b0;
+    font-size: 1.2em;
+}
+
+#nyhedsbrev a {
+    text-decoration: none;
+    color: #63c3b0;
+    font-family: 'hk_grotesksemibold';
+    margin: 5px;
+    transition: 0.5s;
+}
+
+#nyhedsbrev a:hover {
+    font-size: 1.2em;
+}
+
+
+/* footer indhold SLUT */
 
 .menusteder {
     margin-bottom: 40px;
@@ -238,5 +268,6 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 
 /* footer facebook og instalogo SLUT */
