@@ -270,6 +270,7 @@ footer {
     width: 100%;
     margin-bottom: 40px;
     font-size: 1em;
+    margin-top: 15px;
 }
 
 #steder {
@@ -310,3 +311,13 @@ footer {
 
 
 /* cookie og privatlivs html SLUT*/
+
+
+/* styling til single-page til steder */
+
+#single_sted {
+    margin: 20px;
+}
+
+
+/* styling til single-page til steder */
