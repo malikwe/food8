@@ -26,13 +26,13 @@ body {
 
 p {
     font-size: 1.2em;
-    font-family: "hk_groteskregular" text-align: justify;
+    font-family: "hk_groteskregular";
+    text-align: justify;
 }
 
 .kortbeskrivelse h2 {
     text-align: center;
     font-size: 1.4em;
-    font-family: "hk_grotesksemibold"
 }
 
 .kortbeskrivelse a {
@@ -61,6 +61,7 @@ p {
     font-family: '';
     font-size: 1.5em;
     margin: 5px;
+    font-family: "hk_groteskregular"
 }
 
 .menuknap a:hover {
@@ -226,38 +227,40 @@ footer {
 
 /* footer indhold SLUT */
 
-#steder {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 1024px;
+.menusteder {
+    margin-bottom: 40px;
+}
+
+.box {
+    width: 90%;
     margin: 0 auto;
-    grid-gap: 50px;
-    transition: all 1s ease;
+}
+
+.sted {
+    margin: 0 auto;
 }
 
 .navn {
-    font-size: 1.4em;
-    font-family: "hk_grotesksemibold";
     margin-bottom: 15px;
 }
 
 .stedbillede {
-    width: 400px;
-    margin-bottom: 15px;
+    max-width: 675px;
+    width: 100%;
 }
 
 .beskrivelse {
-    font-size: 1.2em;
-    font-family: "hk_groteskregular";
-    text-align: justify;
-    max-width: 375px;
-    border-bottom: 10px #fff;
+    max-width: 675px;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 1em;
 }
 
-@media and screen (max-width: 500px) {
-    .stedbillede {
-        width: 400px;
-    }
+#steder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    transition: all 1s ease;
 }
 
 @media screen and (max-width: 1000px) {
@@ -265,3 +268,6 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+
+/* footer facebook og instalogo SLUT */
