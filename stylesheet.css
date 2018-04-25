@@ -43,6 +43,7 @@ p {
 .kortbeskrivelse h2 {
     text-align: center;
     font-size: 1.4em;
+    margin-bottom: 15px;
 }
 
 .kortbeskrivelse a {
@@ -65,27 +66,28 @@ p {
     margin-top: 20px;
 }
 
-.menuknap a {
+.menuknap button {
     text-decoration: none;
     color: black;
     font-family: '';
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 5px;
     font-family: "hk_grotesksemibold";
+    transition: 0.1s;
 }
 
-.menuknap a:hover {
+.menuknap button:hover {
     color: #63c3b0;
     border: solid 1px #63c3b0;
 }
 
-
 /*styling til menu knapper*/
 
-#menulink {
+.menulink {
     border: none;
     background-color: #fbfaf2;
 }
+
 
 
 /*Forside Slideshow*/
@@ -107,6 +109,7 @@ p {
     height: 23.63vw;
     width: 55vw;
     margin: 0 auto;
+    margin-top: 15px;
 }
 
 
@@ -212,6 +215,11 @@ footer {
     text-align: center;
 }
 
+.info_container a {
+    color: black;
+    font-family: "hk_groteskregular";
+}
+
 #nyhedsbrev {
     text-decoration: none;
     color: #63c3b0;
@@ -220,16 +228,16 @@ footer {
     background-color: #fbfaf2;
 }
 
+#nyhedsbrev :hover {
+    font-size: 1.2em;
+}
+
 #nyhedsbrev a {
     text-decoration: none;
     color: #63c3b0;
     font-family: 'hk_grotesksemibold';
     margin: 5px;
     transition: 0.5s;
-}
-
-#nyhedsbrev a:hover {
-    font-size: 1.2em;
 }
 
 
@@ -262,7 +270,9 @@ footer {
     width: 100%;
     margin-bottom: 40px;
     font-size: 1em;
+    margin-top: 15px;
 }
+
 
 #steder {
     display: grid;
@@ -279,3 +289,36 @@ footer {
 
 
 /* footer facebook og instalogo SLUT */
+
+
+/* cookie og privatlivs html */
+
+.cookieogprivat {
+    margin: 15px;
+}
+
+.cookieogprivat h1 {
+    margin-bottom: 15px;
+}
+
+.cookieogprivat h2 {
+    margin-bottom: 15px;
+}
+
+.cookieogprivat p {
+    margin-bottom: 15px;
+    font-size: 0.8em;
+}
+
+
+/* cookie og privatlivs html SLUT*/
+
+
+/* styling til single-page til steder */
+
+#single_sted {
+    margin: 20px;
+}
+
+
+/* styling til single-page til steder */
