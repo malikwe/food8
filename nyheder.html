@@ -68,6 +68,11 @@
                 klon.querySelector("[data-image]").src = nyhed.acf.foto;
                 klon.querySelector("[data-shortdescription]").innerHTML = nyhed.acf.kortbeskrivelse;
 
+                //single view on click.
+                klon.querySelector("article").addEventListener("click", () => {
+                    location.href = "nyhed.html?id=" + sted.id;
+                });
+
                 display.appendChild(klon);
             });
         }
