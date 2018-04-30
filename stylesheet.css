@@ -363,8 +363,7 @@ footer {
     margin: 20px;
 }
 #nyhed {
-    border: solid 3px #63c3b0;
-    padding: 10px;
+    border-bottom: solid 3px #63c3b0;
     margin-bottom: 20px;
 }
 .nyhednavn {
@@ -377,7 +376,7 @@ footer {
 }
 .kortbeskrivelse {
     font-family: 'hk_grotesksemibold';
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 /* styling til nyheder SLUT */
