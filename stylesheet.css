@@ -243,6 +243,9 @@ footer {
 
 /* footer indhold SLUT */
 
+
+/* styling til steder */
+
 .menusteder {
     margin-bottom: 40px;
 }
@@ -268,15 +271,14 @@ footer {
 .beskrivelse {
     max-width: 675px;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 1em;
-    margin-top: 15px;
 }
 
 #steder {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
+    grid-gap: 20px;
     transition: all 1s ease;
 }
 
@@ -286,8 +288,13 @@ footer {
     }
 }
 
+.sted .beskrivelse {
+    font-family: 'hk_grotesksemibold';
+    font-size: 0.9em;
+}
 
-/* footer facebook og instalogo SLUT */
+
+/* styling til steder SLUT */
 
 
 /* cookie og privatlivs html */
@@ -313,7 +320,7 @@ footer {
 /* cookie og privatlivs html SLUT*/
 
 
-/* styling til single-page til steder */
+/* styling til single-page, de enkelte steder */
 
 #single_sted {
     margin: 20px;
