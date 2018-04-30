@@ -339,42 +339,45 @@ footer {
 }
 
 #single_sted p {
-    margin-bottom: 15px;
+    text-align: center;
 }
 
+=======margin-bottom: 15px;
+
+}
 .stedbillede {
     margin-bottom: 15px;
 }
-
 .overskrift {
     font-family: 'hk_grotesksemibold';
     margin-bottom: 15px;
 }
-
+.overskrift {
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: "hk_grotesksemibold";
+    text-align: justify;
+}
 
 /* styling til single-page til steder */
 
-
 /* styling til nyheder */
-
 #nyheder {
     margin: 20px;
 }
-
 .nyhednavn {
     margin-bottom: 15px;
     margin-top: 20px;
 }
-
 .nyhedbillede {
     max-width: 675px;
     width: 100%;
     margin-bottom: 15px;
 }
-
 .kortbeskrivelse {
     font-family: 'hk_grotesksemibold';
 }
 
-
 /* styling til nyheder SLUT */
+
+/* styling til single-page til steder SLUT */
