@@ -269,8 +269,7 @@ footer {
 
 .sted {
     margin: 0 auto;
-    padding: 10px;
-    border: solid 3px #63c3b0;
+    border-bottom: solid 3px #63c3b0;
 }
 
 .navn {
@@ -285,7 +284,7 @@ footer {
 .beskrivelse {
     max-width: 675px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-top: 10px;
     font-size: 1em;
 }
