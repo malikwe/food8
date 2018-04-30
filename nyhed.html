@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sted</title>
+    <title>nyhed</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
@@ -32,16 +32,12 @@
     </div>
 
 
-
-
     <section id="single_nyhed">
         <article>
-            <h2 class="navn" data-title></h2>
-            <img class="billede" data-image>
-            <p class="overskrift" data-overskrift></p>
+            <h2 class="overskrift" data-overskrift></h2>
+            <img class="nyhedbillede" data-image>
+
             <p class="beskrivelse" data-beskrivelse></p>
-
-
 
 
         </article>
@@ -54,7 +50,7 @@
         let urlID = urlParams.get('id');
         console.log(urlID);
 
-        let jsonUrl = "http://magnuskvolbaek.dk/kea/food8/wordpress/wp-json/wp/v2/steder/" + urlID;
+        let jsonUrl = "http://magnuskvolbaek.dk/kea/food8/wordpress/wp-json/wp/v2/nyheder/" + urlID;
         let single = {};
 
 
@@ -74,22 +70,9 @@
         function visSingle() {
 
 
-
-            document.querySelector("[data-title]").textContent = single.acf.navn;
-            document.querySelector("[data-image]").src = single.acf.foto;
             document.querySelector("[data-overskrift]").innerHTML = single.acf.overskrift;
-            document.querySelector("[data-open]").innerHTML = single.acf.abningstider;
-            document.querySelector("[data-kontakt]").textContent = single.acf.kontakt;
-            document.querySelector("[data-adresse]").textContent = single.acf.adresse;
+            document.querySelector("[data-image]").src = single.acf.foto;
             document.querySelector("[data-beskrivelse]").innerHTML = single.acf.beskrivelse;
-            document.querySelector("[data-kontrolrapport]").textContent = single.acf.kontrolrapport;
-            document.querySelector("[data-morgen_menu]").innerHTML = single.acf.morgen_menu;
-            document.querySelector("[data-morgen_menu]").innerHTML = single.acf.morgen_menu;
-            document.querySelector("[data-frokost_menu]").innerHTML = single.acf.frokost_menu;
-            document.querySelector("[data-aften_menu]").innerHTML = single.acf.aften_menu;
-            document.querySelector("[data-selskabs_menu]").innerHTML = single.acf.selskabs_menu;
-            document.querySelector("[data-drikke_menu]").innerHTML = single.acf.drikke_menu;
-            document.querySelector("[data-takeaway]").innerHTML = single.acf.takeaway;
 
         }
         document.querySelector("#menusteder").addEventListener("click", () => {
