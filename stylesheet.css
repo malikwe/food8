@@ -40,6 +40,10 @@ p {
     text-align: justify;
 }
 
+p.beskrivelse {
+    text-align: center;
+}
+
 .kortbeskrivelse h2 {
     text-align: center;
     font-size: 1.2em;
@@ -64,7 +68,6 @@ p {
     font-size: 100%;
     letter-spacing: 5px;
     margin-top: 20px;
-
 }
 
 .menuknap button {
@@ -79,8 +82,8 @@ p {
 .menuknap button:hover {
     color: #63c3b0;
     border: solid 1px #63c3b0;
-
 }
+
 
 /*styling til menu knapper*/
 
@@ -88,7 +91,6 @@ p {
     border: none;
     background-color: #fbfaf2;
 }
-
 
 
 /*Forside Slideshow*/
@@ -113,6 +115,14 @@ p {
     margin-top: 15px;
 }
 
+#single_sted article {
+    text-align: center;
+}
+
+#single_sted article p {
+    text-align: center;
+}
+
 
 /* laver grid system til mobil-version. vores grid består af 1 række, derfor "1fr".*/
 
@@ -122,7 +132,6 @@ p {
     grid-template-rows: auto;
     grid-template-areas: "kortbeskrivelse" "nyhed1" "nyhed2" "nyhed3" "nyhed4" "nyhed5" "footer";
     margin: 17px;
-
 }
 
 .kortbeskrivelse {
@@ -246,9 +255,11 @@ footer {
 
 /* footer indhold SLUT */
 
+
+/* styling til steder */
+
 .menusteder {
     margin-bottom: 40px;
-
 }
 
 .box {
@@ -272,16 +283,14 @@ footer {
 .beskrivelse {
     max-width: 675px;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 1em;
-    margin-top: 15px;
 }
-
 
 #steder {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
+    grid-gap: 20px;
     transition: all 1s ease;
 }
 
@@ -291,8 +300,14 @@ footer {
     }
 }
 
+.sted .beskrivelse {
+    font-family: 'hk_grotesksemibold';
+    font-size: 0.9em;
+}
 
-/* footer facebook og instalogo SLUT */
+
+/* styling til steder SLUT */
+
 
 /* cookie og privatlivs html */
 
@@ -316,15 +331,31 @@ footer {
 
 /* cookie og privatlivs html SLUT*/
 
-/* styling til single-page til steder */
+
+/* styling til single-page, de enkelte steder */
 
 #single_sted {
     margin: 20px;
 }
 
 #single_sted p {
+<<<<<<< HEAD
     text-align: center;
 }
+=======
+    margin-bottom: 15px;
+}
+
+.stedbillede {
+    margin-bottom: 15px;
+}
+
+.overskrift {
+    font-family: 'hk_grotesksemibold';
+    margin-bottom: 15px;
+}
+
+>>>>>>> origin/master
 
 .overskrift {
     margin-top: 10px;
