@@ -40,10 +40,6 @@ p {
     text-align: justify;
 }
 
-p.beskrivelse {
-    text-align: center;
-}
-
 .kortbeskrivelse h2 {
     text-align: center;
     font-size: 1.2em;
@@ -269,6 +265,8 @@ footer {
 
 .sted {
     margin: 0 auto;
+    padding: 10px;
+    border: solid 3px #63c3b0;
 }
 
 .navn {
@@ -284,6 +282,7 @@ footer {
     max-width: 675px;
     width: 100%;
     margin-bottom: 20px;
+    margin-top: 10px;
     font-size: 1em;
 }
 
@@ -342,7 +341,6 @@ footer {
     text-align: center;
 }
 
-=======margin-bottom: 15px;
 
 }
 .stedbillede {
@@ -356,7 +354,6 @@ footer {
     margin-top: 10px;
     font-size: 1em;
     font-family: "hk_grotesksemibold";
-    text-align: justify;
 }
 
 /* styling til single-page til steder */
@@ -365,9 +362,13 @@ footer {
 #nyheder {
     margin: 20px;
 }
+#nyhed {
+    border: solid 3px #63c3b0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
 .nyhednavn {
     margin-bottom: 15px;
-    margin-top: 20px;
 }
 .nyhedbillede {
     max-width: 675px;
@@ -376,6 +377,7 @@ footer {
 }
 .kortbeskrivelse {
     font-family: 'hk_grotesksemibold';
+    margin-bottom: 35px;
 }
 
 /* styling til nyheder SLUT */
