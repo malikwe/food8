@@ -353,3 +353,28 @@ footer {
 
 
 /* styling til single-page til steder */
+
+
+/* styling til nyheder */
+
+#nyheder {
+    margin: 20px;
+}
+
+.nyhednavn {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.nyhedbillede {
+    max-width: 675px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.kortbeskrivelse {
+    font-family: 'hk_grotesksemibold';
+}
+
+
+/* styling til nyheder SLUT */

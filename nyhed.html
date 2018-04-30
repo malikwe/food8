@@ -4,15 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nyheder</title>
+    <title>sted</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
+
     <a href="index.html">
         <div class="logo">
         </div>
     </a>
+
     <div class="menuknap menusteder">
 
         <button class="menulink" id="menuinspiration">
@@ -29,49 +31,66 @@
 
     </div>
 
-    <section id="nyheder">
 
+
+
+    <section id="single_nyhed">
+        <article>
+            <h2 class="navn" data-title></h2>
+            <img class="billede" data-image>
+            <p class="overskrift" data-overskrift></p>
+            <p class="beskrivelse" data-beskrivelse></p>
+
+
+
+
+        </article>
     </section>
 
 
-    <template>
-        <article>
-            <h2 class="nyhednavn" data-title></h2>
-            <img class="nyhedbillede" data-image>
-            <p class="kortbeskrivelse" data-shortdescription></p>
-            <p class="nyhedbeskrivelse" data-description></p>
-            <p data-kontakt></p>
-        </article>
-    </template>
-    <script>
-        let jsonUrl = "http://magnuskvolbaek.dk/kea/food8/wordpress/wp-json/wp/v2/nyheder"
-        let nyheder = [];
 
-        let template = document.querySelector("template");
-        let display = document.querySelector("#nyheder")
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let urlID = urlParams.get('id');
+        console.log(urlID);
+
+        let jsonUrl = "http://magnuskvolbaek.dk/kea/food8/wordpress/wp-json/wp/v2/steder/" + urlID;
+        let single = {};
+
+
+
 
         document.addEventListener("DOMContentLoaded", hentJson);
 
         async function hentJson() {
             let jsonData = await fetch(jsonUrl);
-            nyheder = await jsonData.json();
+            single = await jsonData.json();
+            console.log(single);
 
-            visNyheder();
+            visSingle();
 
         }
 
-        function visNyheder() {
-            nyheder.forEach(nyhed => {
-                let klon = template.cloneNode(true).content;
+        function visSingle() {
 
-                klon.querySelector("[data-title]").textContent = nyhed.acf.overskrift;
-                klon.querySelector("[data-image]").src = nyhed.acf.foto;
-                klon.querySelector("[data-shortdescription]").innerHTML = nyhed.acf.kortbeskrivelse;
-                klon.querySelector("[data-description]").innerHTML = nyhed.acf.beskrivelse;
-                klon.querySelector("[data-kontakt]").innerHTML = nyhed.acf.kontakt;
 
-                display.appendChild(klon);
-            });
+
+            document.querySelector("[data-title]").textContent = single.acf.navn;
+            document.querySelector("[data-image]").src = single.acf.foto;
+            document.querySelector("[data-overskrift]").innerHTML = single.acf.overskrift;
+            document.querySelector("[data-open]").innerHTML = single.acf.abningstider;
+            document.querySelector("[data-kontakt]").textContent = single.acf.kontakt;
+            document.querySelector("[data-adresse]").textContent = single.acf.adresse;
+            document.querySelector("[data-beskrivelse]").innerHTML = single.acf.beskrivelse;
+            document.querySelector("[data-kontrolrapport]").textContent = single.acf.kontrolrapport;
+            document.querySelector("[data-morgen_menu]").innerHTML = single.acf.morgen_menu;
+            document.querySelector("[data-morgen_menu]").innerHTML = single.acf.morgen_menu;
+            document.querySelector("[data-frokost_menu]").innerHTML = single.acf.frokost_menu;
+            document.querySelector("[data-aften_menu]").innerHTML = single.acf.aften_menu;
+            document.querySelector("[data-selskabs_menu]").innerHTML = single.acf.selskabs_menu;
+            document.querySelector("[data-drikke_menu]").innerHTML = single.acf.drikke_menu;
+            document.querySelector("[data-takeaway]").innerHTML = single.acf.takeaway;
+
         }
         document.querySelector("#menusteder").addEventListener("click", () => {
             window.location.href = "steder.html";
@@ -84,6 +103,8 @@
             window.location.href = "nyheder.html";
         });
     </script>
+
+
 </body>
 <footer>
     <div class="footer">
