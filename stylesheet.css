@@ -283,6 +283,11 @@ footer {
 .stedbillede {
     max-width: 675px;
     width: 100%;
+    transition: all 1s;
+}
+
+.stedbillede:hover {
+    transform: scale(1.03);
 }
 
 .beskrivelse {
@@ -380,6 +385,10 @@ footer {
     max-width: 675px;
     width: 100%;
     margin-bottom: 15px;
+    transition: all 1s;
+}
+.nyhedbillede:hover {
+    transform: scale(1.03);
 }
 .kortbeskrivelse {
     font-family: 'hk_grotesksemibold';
