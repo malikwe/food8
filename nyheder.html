@@ -39,8 +39,7 @@
             <h2 class="nyhednavn" data-title></h2>
             <img class="nyhedbillede" data-image>
             <p class="kortbeskrivelse" data-shortdescription></p>
-            <p class="nyhedbeskrivelse" data-description></p>
-            <p data-kontakt></p>
+
         </article>
     </template>
     <script>
@@ -67,8 +66,6 @@
                 klon.querySelector("[data-title]").textContent = nyhed.acf.overskrift;
                 klon.querySelector("[data-image]").src = nyhed.acf.foto;
                 klon.querySelector("[data-shortdescription]").innerHTML = nyhed.acf.kortbeskrivelse;
-                klon.querySelector("[data-description]").innerHTML = nyhed.acf.beskrivelse;
-                klon.querySelector("[data-kontakt]").innerHTML = nyhed.acf.kontakt;
 
                 display.appendChild(klon);
             });
