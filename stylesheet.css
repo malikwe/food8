@@ -38,6 +38,10 @@ h2.navn {
     text-align: center;
 }
 
+h2.nyhednavn {
+    text-align: center;
+}
+
 p {
     font-size: 0.9em;
     font-family: "hk_groteskregular";
