@@ -40,6 +40,10 @@ p {
     text-align: justify;
 }
 
+p.beskrivelse {
+    text-align: center;
+}
+
 .kortbeskrivelse h2 {
     text-align: center;
     font-size: 1.2em;
@@ -109,6 +113,14 @@ p {
     width: 64vw;
     margin: 0 auto;
     margin-top: 15px;
+}
+
+#single_sted article {
+    text-align: center;
+}
+
+#single_sted article p {
+    text-align: center;
 }
 
 
