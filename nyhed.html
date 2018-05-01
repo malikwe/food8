@@ -36,7 +36,7 @@
         <article>
             <h2 class="overskrift" data-overskrift></h2>
             <img class="nyhedbillede" data-image>
-
+            <p class="kortbeskrivelse" data-shortdescription></p>
             <p class="beskrivelse" data-beskrivelse></p>
 
 
@@ -73,6 +73,8 @@
             document.querySelector("[data-overskrift]").innerHTML = single.acf.overskrift;
             document.querySelector("[data-image]").src = single.acf.foto;
             document.querySelector("[data-beskrivelse]").innerHTML = single.acf.beskrivelse;
+            document.querySelector("[data-shortdescription]").innerHTML = single.acf.kortbeskrivelse;
+
 
         }
         document.querySelector("#menusteder").addEventListener("click", () => {
