@@ -411,6 +411,14 @@ footer {
     font-size: 1em;
     font-family: "hk_grotesksemibold";
 }
+.detailsopen {
+    text-align: center;
+}
+summary {
+    margin: 10px;
+    font-family: "hk_grotesksemibold";
+    color: #2e51a5
+}
 
 /* styling til single-page til steder SLUT */
 
