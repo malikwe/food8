@@ -81,6 +81,7 @@ p {
     margin: 5px;
     font-family: "hk_grotesksemibold";
     transition: 0.1s;
+    padding: 2px;
 }
 
 .menuknap button:hover {
@@ -262,6 +263,31 @@ footer {
 
 /* styling til steder */
 
+#steder h2 {
+    text-align: center;
+}
+
+.stederkategorier {
+    text-align: center;
+}
+
+.stederkategorier button {
+    text-decoration: none;
+    color: #63c3b0;
+    font-size: 0.9em;
+    margin: 5px;
+    font-family: "hk_grotesksemibold";
+    border: solid 1.3px #63c3b0;
+    background-color: #fbfaf2;
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.stederkategorier button:hover {
+    color: #fbfaf2;
+    background-color: #63c3b0;
+}
+
 .menusteder {
     margin-bottom: 40px;
 }
@@ -368,7 +394,7 @@ footer {
     font-family: "hk_grotesksemibold";
 }
 
-/* styling til single-page til steder */
+/* styling til single-page til steder SLUT */
 
 /* styling til nyheder */
 #nyheder {
@@ -397,4 +423,18 @@ footer {
 
 /* styling til nyheder SLUT */
 
-/* styling til single-page til steder SLUT */
+/* styling til single nyhed */
+#single_nyhed {
+    margin: 20px;
+}
+#single_nyhed .kortbeskrivelse {
+    margin-bottom: 0px;
+}
+#single_nyhed p {
+    margin-bottom: 10px;
+}
+#single_nyhed h2 {
+    margin-bottom: 15px;
+}
+
+/* styling til single nyhed SLUT */
