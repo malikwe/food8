@@ -16,6 +16,11 @@
 
     <div class="menuknap menusteder">
 
+
+        <button class="menulink" id="menuforsider">
+            FORSIDE
+        </button>
+
         <button class="menulink" id="menuinspiration">
             NYHEDER
         </button>
@@ -103,6 +108,10 @@
             window.location.href = "nyheder.html";
         });
 
+
+        document.querySelector("#menuforsider").addEventListener("click", () => {
+            window.location.href = "forsider.html";
+        });
     </script>
 </body>
 <footer>
