@@ -259,12 +259,13 @@ footer {
 
 /* footer indhold SLUT */
 
-
 /* styling til steder */
 
 .menusteder {
     margin-bottom: 40px;
 }
+
+
 
 .box {
     width: 90%;
@@ -319,7 +320,6 @@ footer {
 
 /* styling til steder SLUT */
 
-
 /* cookie og privatlivs html */
 
 .cookieogprivat {
@@ -342,7 +342,6 @@ footer {
 
 /* cookie og privatlivs html SLUT*/
 
-
 /* styling til single-page, de enkelte steder */
 
 #single_sted {
@@ -355,13 +354,16 @@ footer {
 
 
 }
+
 .stedbillede {
     margin-bottom: 15px;
 }
+
 .overskrift {
     font-family: 'hk_grotesksemibold';
     margin-bottom: 15px;
 }
+
 .overskrift {
     margin-top: 10px;
     font-size: 1em;
@@ -371,28 +373,39 @@ footer {
 /* styling til single-page til steder */
 
 /* styling til nyheder */
+
 #nyheder {
     margin: 20px;
 }
+
 #nyhed {
     border-bottom: solid 3px #63c3b0;
     margin-bottom: 20px;
 }
+
 .nyhednavn {
     margin-bottom: 15px;
 }
+
 .nyhedbillede {
     max-width: 675px;
     width: 100%;
     margin-bottom: 15px;
     transition: all 1s;
 }
+
 .nyhedbillede:hover {
     transform: scale(1.03);
 }
+
 .kortbeskrivelse {
     font-family: 'hk_grotesksemibold';
     margin-bottom: 20px;
+}
+
+.menuknap button.active {
+    color: #63c3b0;
+    border: solid 1px #63c3b0;
 }
 
 /* styling til nyheder SLUT */
