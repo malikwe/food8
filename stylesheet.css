@@ -120,14 +120,6 @@ p {
     margin-top: 15px;
 }
 
-#single_sted article {
-    text-align: center;
-}
-
-#single_sted article p {
-    text-align: center;
-}
-
 
 /* laver grid system til mobil-version. vores grid består af 1 række, derfor "1fr".*/
 
@@ -237,28 +229,37 @@ footer {
     font-family: "hk_groteskregular";
 }
 
-#nyhedsbrev {
-    text-decoration: none;
-    color: #63c3b0;
-    border: solid 2px #63c3b0;
-    font-size: 1.2em;
-    background-color: #fbfaf2;
-}
-
-#nyhedsbrev :hover {
-    font-size: 1.2em;
-}
-
 #nyhedsbrev a {
     text-decoration: none;
     color: #63c3b0;
     font-family: 'hk_grotesksemibold';
+    transition: 0.3s;
+}
+
+#nyhedsbrev a:hover {
+    color: #fbfaf2;
+}
+
+.footer button {
     margin: 5px;
-    transition: 0.5s;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #63c3b0;
+    font-size: 1.2em;
+    font-family: "hk_grotesksemibold";
+    border: solid 2px #63c3b0;
+    background-color: #fbfaf2;
+    transition: 0.3s;
+}
+
+.footer button:hover {
+    color: #fbfaf2;
+    background-color: #63c3b0;
 }
 
 
 /* footer indhold SLUT */
+
 
 /* styling til steder */
 
@@ -291,8 +292,6 @@ footer {
     margin-bottom: 40px;
 }
 
-
-
 .box {
     width: 90%;
     margin: 0 auto;
@@ -320,7 +319,7 @@ footer {
 .beskrivelse {
     max-width: 675px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     margin-top: 10px;
     font-size: 1em;
 }
@@ -343,8 +342,27 @@ footer {
     font-size: 0.9em;
 }
 
+.buttoncontainer button {
+    margin: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #63c3b0;
+    font-size: 0.7em;
+    font-family: "hk_grotesksemibold";
+    border: solid 1.3px #63c3b0;
+    background-color: #fbfaf2;
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.buttoncontainer button:hover {
+    color: #fbfaf2;
+    background-color: #63c3b0;
+}
+
 
 /* styling til steder SLUT */
+
 
 /* cookie og privatlivs html */
 
@@ -368,6 +386,7 @@ footer {
 
 /* cookie og privatlivs html SLUT*/
 
+
 /* styling til single-page, de enkelte steder */
 
 #single_sted {
@@ -380,16 +399,13 @@ footer {
 
 
 }
-
 .stedbillede {
     margin-bottom: 15px;
 }
-
 .overskrift {
     font-family: 'hk_grotesksemibold';
     margin-bottom: 15px;
 }
-
 .overskrift {
     margin-top: 10px;
     font-size: 1em;
@@ -399,36 +415,29 @@ footer {
 /* styling til single-page til steder SLUT */
 
 /* styling til nyheder */
-
 #nyheder {
     margin: 20px;
 }
-
 #nyhed {
     border-bottom: solid 3px #63c3b0;
     margin-bottom: 20px;
 }
-
 .nyhednavn {
     margin-bottom: 15px;
 }
-
 .nyhedbillede {
     max-width: 675px;
     width: 100%;
     margin-bottom: 15px;
     transition: all 1s;
 }
-
 .nyhedbillede:hover {
     transform: scale(1.03);
 }
-
 .kortbeskrivelse {
     font-family: 'hk_grotesksemibold';
     margin-bottom: 20px;
 }
-
 .menuknap button.active {
     color: #63c3b0;
     border: solid 1px #63c3b0;
